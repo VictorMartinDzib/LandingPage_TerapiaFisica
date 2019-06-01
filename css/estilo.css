@@ -1,0 +1,648 @@
+
+/*RESETEANDO PANTALLA*/
+*{
+    margin: auto;
+    padding: 0;
+
+    /*Este bloque se encarga de emparejar los margenes, paddings y tamaños de las secciones y evitar que queden
+    disparejos o algo por el estilo*/
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*CONFIGURACION DE LA PAGINA*/
+.tab{
+    width: 100%;
+    height: 25px;
+    background: #00ab84;
+}
+body{
+    background: white;
+    font-family: 'Arial';
+}
+
+/*COMIENZA HEADER*/
+header{
+    height: 100%;
+    background: url('images/bannerUT.jpg') /*fixed*/ no-repeat;
+    background-size: 100%;
+    position: relative;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.contenedor{
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+}
+
+header .contenedor .logo{
+    margin-top: 5%;
+    position: relative;
+}
+
+header .contenedor .carrera{
+    margin-top: 5%;
+    color: #024737;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+header .contenedor .area{
+    margin-top: 1%;
+    color: #affcea;
+    font-weight: bold;
+    size: 18px;
+    position: relative;
+}
+
+header .contenedor nav{
+    text-align: end;
+    margin-top: 17%;
+    padding-inline-end: 5%;
+}
+header .contenedor nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+    position: relative;
+}
+header .contenedor nav a:hover{
+    color: rgba(255,255,255, 0.2);
+}
+
+/*COMIENZA CUERPO PRINCIPAL*/
+section{
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+article{
+    width: 70%;
+    margin: auto;
+}
+
+/*AQUI COMIENZA PERFIL PROFESIONAL*/
+#perfil_profesional{
+    background: white;/*#00ab84;*/
+    overflow: hidden;
+    height: auto;
+    margin: auto;
+}
+
+.encabezado_articulo{
+    height: 70px;
+    font-size: 20px;
+    background: #eaeaea;
+    text-align: center;
+    font-family: "Bitter", Times, serif;
+    color: #343434;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloque_imagen{
+    margin: 5%;
+    width: 30%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.masdetalles{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 25px;
+    background: #212327;
+    border: 0.5px solid #ccc;
+    border-radius: 50px;
+}
+
+.turismo_imagen{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.5)
+}
+
+.turismo_parrafo{
+    margin: 5%;
+    overflow: hidden;
+    width: 50%;
+    color: #666;/*white;*/
+    font-size: 16px;
+    font-family: 'Arial';
+    padding-block-end: 20px;
+    position: relative;
+}
+
+/*Boton Flotante*/
+#btn_arriba{
+    display:block;
+    position:fixed;
+    bottom:1rem;
+    right:2.5rem;
+    width:3rem;
+    height:3rem;
+    padding-top:1rem;
+    text-decoration:none;
+    color:#fff;
+    background-color:rgba(0,0,0,.5);
+    border-radius:100%;
+    font-weight:bold;
+}
+#btn_arriba:hover{
+    background-color:#000;
+}
+.flecha{
+    width: 1rem;
+    height: 1rem;
+    background-color:rgba(255,255,255,0.8);
+    clip-path: polygon(50% 0, 100% 90%, 0 90%); /*(x y,x y, x y) Coordenadas de cada punto*/
+}
+
+/*AQUI COMIENZA EL PLAN DE ESTUDIOS */
+#plan_de_estudios{
+    overflow: hidden;
+    height: auto;
+    margin: auto;
+}
+
+table{
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    font-size:1rem;
+}
+table, td, th{
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+th, td{
+    padding: 10px 20px;
+}
+th{
+    background: #212327;
+    color: white;
+}
+
+
+/*AQUI COMIENZA CONOCE LA UT*/
+#conoce_la_ut{
+    overflow: hidden;
+    height: auto;
+    margin: auto;
+}
+.ut_imagen{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.5)
+}
+.bloque_imagen2{
+    margin: 5%;
+    width: 30%;
+    height: auto;
+    float: right;
+}
+
+.ut_parrafos{
+    margin: 5%;
+    overflow: hidden;
+    width: 50%;
+    color: #666;/*white;*/
+    float: left;
+    font-size: 16px;
+    padding-block-end: 15px;
+    position: relative;
+}
+
+/*Configurando botones con enlaces*/
+.conocemas{
+     display:block;
+     margin-left:auto;
+     margin-right:auto;
+     margin-top:1rem;
+     margin-bottom:1rem;
+     padding:1rem;
+     width:35%;
+     border-radius: 1.5rem;
+     text-decoration:none;
+     text-align: center;
+     font-size: 1rem;
+     color:#fff;
+     background-color:#212327;
+     cursor:pointer;
+ }
+ .conocemas:hover{
+     opacity: 0.5;
+ }
+
+
+/*AQUI COMIENZA LA GALERIA DE IMAGENES*/
+.imagenes{
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img{
+    vertical-align: top; /*eliminando espaciado entre cada imagen*/
+    float: left;
+    margin: auto;
+    width: 25%;
+    opacity: 0.8; /*opacidad*/
+    position: relative;
+}
+
+.imagenes img:hover{
+    opacity: 1;
+    /*Bloque de efecto ZOOM*/
+    -webkit-transform:scale(1.05); 
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+    
+}
+
+  /*
+  AQUI COMIENZA EL FORMULARIO
+  */
+
+  #contacto{
+    overflow: hidden;
+    width:100%;
+    height:auto;
+    background-color:#666666;
+    color:#fff;
+ }
+.caja_contacto{
+    margin-left:auto;
+    margin-right:auto;
+    width:60%;
+    font-size:1.5rem;
+}
+.caja_contacto h2{
+    margin-top:4rem;
+    margin-bottom:1.5rem;
+    font-size:2rem;
+}
+.caja_contacto p{
+    color:#02dfad;
+    
+}
+.caja_contacto form{
+    margin-top:3rem;
+    margin-bottom:7rem;
+    font-size:1.1rem;
+}
+.in_texto{
+    display:block;
+    padding:1rem;
+    margin-bottom:2.5rem;
+    font-size:1.2rem;
+    color:#000;
+    border:solid 0.15rem #929292; /**929292 c5c5c5 d1d1d1*/
+    border-radius:0.75rem;
+}
+#izquierda{
+    float:left;
+    width:45%;
+}
+#derecha{
+    float:right;
+    width:45%;
+}
+#abajo{
+    clear: both;
+    width:100%;
+}
+.in_check{
+    margin-left:5%;
+    margin-right:1rem;
+}
+#frase_acepto:hover{
+    color:#66d4ff;
+}
+.btn_enviar{
+    display:block;
+    clear:both;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:3rem;
+    width:15%;
+    padding:1rem 0 1rem 0;
+    border:solid .15rem #02dfad;
+    border-radius:1rem;
+    font-size:1.2rem;
+    color:#fff;
+    background-color:#02dfad;
+}
+.btn_enviar:hover{
+    background-color:#01c89b;
+    border-color: #01c89b;
+    cursor:pointer;
+}
+
+
+  /*AQUI COMIENZA FOOTER*/
+footer{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    background-color:#252525;
+    color:#fff;
+    font-size:1rem;
+}
+#caja_footer{
+    width:70%;
+    overflow:hidden;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2rem;
+    margin-bottom:4rem;
+}
+footer ul{
+    display:block;
+    width:30%;
+    float:left;
+    list-style:none;
+}
+footer li{
+    margin-bottom:1rem;
+}
+
+#info_b{
+    margin-left:5%;
+    margin-right:5%;
+}
+#info_c{
+    float:right;
+    text-decoration: none;
+    color:#fff;
+    text-align: left;
+}
+footer a{
+    text-decoration: none;
+    color:#fff;
+}
+.negrita{
+    font-weight: bold;
+}
+
+/*iconos*/
+#facebook_fondo{
+    fill:#fff;
+}
+#facebook_letra{
+    fill:#252525;
+}
+#twitter_fondo{
+    fill:#fff;
+}
+#twitter_ave{
+    fill:#252525;
+}
+#youtube{
+    fill:#fff;
+}
+
+
+/*AQUI EMPIEZA EL EFECTO DE ZOOM*/
+/*configuracion del modelo*/
+.modelo {
+    display: none; /* Hidden por defecto */
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Activa el scroll de ser necesario */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  
+  /* configura Contenido del modelo o la imagen */
+  .contenido-modelo {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Agregando animacion de zoom */
+  .contenido-modelo, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* Boton de cierre */
+  .cerrar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .cerrar:hover,
+  .cerrar:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 700px){
+    .contenido-modelo {
+      width: 100%;
+    }
+  }
+
+
+/* DISEÑO RESPONSIVO */
+@media screen and (max-width: 800px) {
+    /*Header responsivo*/
+    header{
+        background: #01c89b;
+    }
+
+    header .contenedor nav{
+        text-align: center;
+        margin-top: 17%;
+        padding-inline-end: 5%;
+    }
+    header .contenedor nav a{
+        display:block;
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+        font-weight: bold;
+        position: relative;
+        font-size: 20px;
+    }
+
+    /* Perfil profesional responsivo */
+    .bloque_imagen{
+        margin: 5%;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .turismo_parrafo{
+        margin: 5%;
+        width: 100%;
+        color: #666;/*white;*/
+        font-size: 16px;
+        padding-block-end: 20px;
+        position: relative;
+    }
+
+    /* Plan de estudios responsivo */
+    #plan_de_estudios{
+        width: 100%;
+        display: inline-block;
+        /*background: url(../images/PlanStudios.png);*/
+    }
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        text-decoration: none;
+        position: relative;
+        font-size:8px;
+    }
+    table, td, th{
+        border: 1px solid black;
+        text-decoration: none;
+    }
+    th, td{
+        padding: 0px;
+    }
+    th{
+        background: #212327;
+        color: white;
+    }
+    li{
+        list-style: none;
+    }
+   
+
+    /*Seccion "conoce la UT" responsiva */
+    .bloque_imagen2{
+        margin: 5%;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    
+    .ut_parrafos{
+        margin: 5%;
+        width: 100%;
+        color: #666;/*white;*/
+        font-size: 16px;
+        padding-block-end: 15px;
+        position: relative;
+    }
+
+    /*Galeria de imagenes responsiva*/
+    .imagenes{
+        margin: 20px auto;
+        position: relative;
+    }
+    
+    .imagenes img{
+        border: solid 1px black;
+        margin: 5px;
+        width: 100%;
+        position: relative;
+        opacity: 1;
+    }
+
+    /*Formulario de contacto responsivo */
+
+    #izquierda{
+        float:left;
+        width:100%;
+    }
+    #derecha{
+        float:right;
+        width:100%;
+    }
+    #abajo{
+        clear: both;
+        width: 100%;
+    }
+    .btn_enviar{
+
+        width:100%;
+    }
+
+    /* Footer responsivo */
+    footer{
+        width:100%;
+        text-align: center;
+        margin: auto;
+    }
+    #caja_footer{
+        width:90%;
+        text-align: center;
+        margin-top:2rem;
+    }
+    footer ul{
+        width:100%;
+        list-style:none;
+    }
+    footer li{
+        margin-bottom:1rem;
+    }
+    
+    #info_b{
+        margin-left:0%;
+        margin-right:0%;
+    }
+    #info_c{
+        text-align: center;
+    }
+
+    /*Botones responsivos*/
+    .conocemas{
+        display:inline-block;
+        margin: 0 auto;
+        width:90%;
+    }
+}
